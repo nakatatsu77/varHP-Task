@@ -89,25 +89,22 @@ element.style {
 
 .-rotate-55,
 .rotate-90 {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-rotate-55 {
   --tw-rotate: -55deg;
 }
 
-.shadow-header-inset, .shadow-header-normal {
-  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+.shadow-header-inset,
+.shadow-header-normal {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-header-normal {
-  --tw-shadow: 4px 4px 32px rgba(0,0,0,.25);
+  --tw-shadow: 4px 4px 32px rgba(0, 0, 0, 0.25);
   --tw-shadow-colored: 4px 4px 32px var(--tw-shadow-color);
 }
-
-
 
 .shadow-root-works-wrapper {
   --tw-shadow: 4px 4px 8px #040e21;
@@ -116,8 +113,7 @@ element.style {
 
 .shadow-root-works-inner,
 .shadow-root-works-wrapper {
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-root-works-inner {
@@ -199,8 +195,8 @@ element.style {
     display: grid;
     grid-template-columns: 456px 120px 1fr;
     grid-template-areas:
-      "title _ text"
-      "button _ text";
+      'title _ text'
+      'button _ text';
   }
   .xl\:rootAboutText {
     grid-area: text;
@@ -213,11 +209,6 @@ element.style {
   }
 }
 
-@media (max-width: 600px) {
-  .swiper-slide {
-    width: 280px !important;
-  }
-}
 .fixed-height-p {
   min-height: 70px;
 }
