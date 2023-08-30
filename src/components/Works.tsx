@@ -1,11 +1,18 @@
 import Image from "next/image";
-import React, { useState, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper';
+import React, { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore from "swiper";
 
 export default function Works() {
   const [swiper, setSwiper] = useState<SwiperCore | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(1);
   const nextSlide = () => {
+    setCurrentSlide((prevSlide) => {
+      if (prevSlide === 3) {
+        return 1;
+      }
+      return prevSlide + 1;
+    });
     if (swiper) {
       swiper.slideNext();
     }
@@ -141,11 +148,8 @@ export default function Works() {
                                         </p>
                                       </div>
                                       <div className="mt-4 flex h-full flex-col gap-5 xl:mt-2">
-                                        <p className="grow">
+                                        <p className="grow fixed-height-p">
                                           Web制作を承っております。
-                                          {/* <br />
-                                          <br />
-                                          <br /> */}
                                         </p>
                                         <dl className="min-h-[116px] bg-sub-100 p-4 text-sm md:min-h-[96px]">
                                           <div className="flex">
@@ -246,7 +250,7 @@ export default function Works() {
                             <div className="flex items-center">
                               <div className="my-custom-pagination mr-6 flex items-center text-xl font-bold md:text-2xl swiper-pagination-fraction swiper-pagination-horizontal">
                                 <span className="swiper-pagination-current">
-                                  1
+                                  {currentSlide}
                                 </span>
                                 <span className="mx-2 md:mx-3 w-6 md:w-[34px] inline-block h-[2px] bg-white -rotate-55"></span>
                                 <span className="swiper-pagination-total">

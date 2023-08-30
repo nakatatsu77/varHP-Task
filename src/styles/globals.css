@@ -98,6 +98,17 @@ element.style {
   --tw-rotate: -55deg;
 }
 
+.shadow-header-inset, .shadow-header-normal {
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.shadow-header-normal {
+  --tw-shadow: 4px 4px 32px rgba(0,0,0,.25);
+  --tw-shadow-colored: 4px 4px 32px var(--tw-shadow-color);
+}
+
+
+
 .shadow-root-works-wrapper {
   --tw-shadow: 4px 4px 8px #040e21;
   --tw-shadow-colored: 4px 4px 8px var(--tw-shadow-color);
@@ -158,9 +169,6 @@ element.style {
   .container {
     max-width: 768px;
   }
-  .md\:w-\[calc\(624px\+\(\(100vw-1440px\)\/2\)\)\] {
-    width: calc(624px px + ((100vw - 1440px) / 2));
-  }
   .md\:min-h-\[96px\] {
     min-height: 96px;
   }
@@ -203,4 +211,13 @@ element.style {
   .xl\:rootAboutTitle {
     grid-area: title;
   }
+}
+
+@media (max-width: 600px) {
+  .swiper-slide {
+    width: 280px !important;
+  }
+}
+.fixed-height-p {
+  min-height: 70px;
 }
