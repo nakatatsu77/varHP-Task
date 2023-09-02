@@ -25,7 +25,7 @@ html {
 }
 
 .bg-root-hero-sp {
-  background-image: image-url("/Images/root_hero_bg_sp.jpg");
+  background-image: image-url("/root_hero_bg_sp.jpg");
 }
 
 .animate-pulseMotion {
