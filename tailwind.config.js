@@ -13,10 +13,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         "root-hero-pc": "url('/Images/root_hero_bg_pc.jpg')",
-        "root-hero-sp": "url('/images/root_hero_bg_sp.jpg')",
-        "root-sustainability": "url('/images/root_sustainability_bg.jpg')",
-        "root-recruit-pc": "url('/images/root_recruit_bg_pc.jpg')",
-        "root-recruit-sp": "url('/images/root_recruit_bg_sp.jpg')",
+        "root-hero-sp": "url('/Images/root_hero_bg_sp.jpg')",
+        "root-sustainability": "url('/Images/root_sustainability_bg.jpg')",
+        "root-recruit-pc": "url('/Images/root_recruit_bg_pc.jpg')",
+        "root-recruit-sp": "url('/Images/root_recruit_bg_sp.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
