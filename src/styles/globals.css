@@ -24,10 +24,6 @@ html {
   padding-left: 1rem;
 }
 
-.bg-root-hero-sp {
-  background-image: url(/images/root_hero_bg_sp.jpg);
-}
-
 .animate-pulseMotion {
   animation: pulseMotion 1.4s linear infinite;
 }
@@ -89,7 +85,9 @@ element.style {
 
 .-rotate-55,
 .rotate-90 {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-rotate-55 {
@@ -98,7 +96,8 @@ element.style {
 
 .shadow-header-inset,
 .shadow-header-normal {
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-header-normal {
@@ -113,7 +112,8 @@ element.style {
 
 .shadow-root-works-inner,
 .shadow-root-works-wrapper {
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-root-works-inner {
@@ -127,14 +127,6 @@ element.style {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
 } */
-
-.bg-root-sustainability {
-  background-image: url(/images/root_sustainability_bg.jpg);
-}
-
-.bg-root-recruit-sp {
-  background-image: url(/images/root_recruit_bg_sp.jpg);
-}
 
 @keyframes pulseMotion {
   0% {
@@ -153,9 +145,6 @@ element.style {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
-  /* .sm\:bg-root-hero-pc {
-    background-image: url(/Images/root_hero_bg_pc.jpg);
-  } */
   .sm\:bg-center {
     background-position: 50%;
   }
@@ -170,9 +159,6 @@ element.style {
   }
   .md\:w-\[calc\(399px\*3\+8px\*2\)\] {
     width: calc(399px * 3 + 8px * 2);
-  }
-  .md\:bg-root-recruit-pc {
-    background-image: url(/images/root_recruit_bg_pc.jpg);
   }
 }
 
@@ -195,8 +181,8 @@ element.style {
     display: grid;
     grid-template-columns: 456px 120px 1fr;
     grid-template-areas:
-      'title _ text'
-      'button _ text';
+      "title _ text"
+      "button _ text";
   }
   .xl\:rootAboutText {
     grid-area: text;
