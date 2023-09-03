@@ -154,7 +154,7 @@ element.style {
     padding-left: 1.5rem;
   }
   .sm\:bg-root-hero-pc {
-    background-image: url('/images/root_hero_bg_pc.png');
+    background-image: url(/public/Images/root_hero_bg_pc.jpg);
   }
   .sm\:bg-center {
     background-position: 50%;
